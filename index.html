@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Монитор</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="#"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="#">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="#">Внутренняя архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="#">Внешняя архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="#">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="#">Оперативная память</a></li>
+            <li><a href="#">Материнская плата</a></li>
+            <li><a href="#">Видеокарта</a></li>
+            <li><a href="#">Процессор</a></li>
+            <li><a href="#">Винчестер</a></li>
+            <li><a href="#">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="">Игра о внутренней архитектуре</a></li>
+            <li><a href="">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="">Монитор</a></li>
+            <li><a href="">Клавиатура</a></li>
+            <li><a href="">Мышь</a></li>
+            <li><a href="">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Монитор</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер1.opdownload" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер2.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Слайдер7.webp" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="buttons">
+                <p class="h1" onclick="menu1_zoom()">Описание</p>
+                <p class="h2" onclick="menu2_zoom()">Характеристики</p>
+                <p class="h3" onclick="menu3_zoom()">Популярные модели</p>
+            </div>
+            <div class="block1_description">
+                <div class="block_1_image"></div>
+                <div class="block_1_text">Монитор - это устройство вывода графической и текстовой информации в форме, доступной пользователю. Мониторы входят в состав любой компьютерной системы. Они являются визуальным каналом связи со всеми прикладными программами и стали жизненно важным компонентом при определении общего качества и удобства эксплуатации всей компьютерной системы. <br><br>
+                    Ранние электронные компьютеры были оснащены панелью лампочек, где состояние каждой определённой лампочки указывало на состояние включения / выключения определенного регистрационного бита внутри компьютера. Это позволило инженерам, управляющим компьютером, контролировать (to monitor — выполнять мониторинг, мониторить) внутреннее состояние машины, поэтому эта панель индикаторов стала известна как «монитор». 
+                </div>
+            </div>
+            <div class="block2_description">
+                <div class="column">
+                    <div class="main">
+                        <div class="img1"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Тип:</p></div>
+                            <div class="text"><p>Игровой, офисный, портативный,<br> игровой, модульный </p></div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img2"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Диагональ:</p></div>
+                            <div class="text"><p>Менее 22", 24", 27", 28-31", 32",<br> 34" и более</p></div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img3"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Соотношение сторон:</p></div>
+                            <div class="text"><p>16:9, 21:9, 32:9, 16:10, 17:9</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="main">
+                        <div class="img4"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Разрешение:</p></div>
+                            <div class="text"><p>16:9, 21:9, 32:9, 16:10, 17:9</p></div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img5"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Тип матрицы:</p></div>
+                            <div class="text"><p>TN+Film, VA, IPS, PLS, OLED</p></div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="img6"></div>
+                        <div class="main_button">
+                            <div class="text_h1"><p>Частота матрицы:</p></div>
+                            <div class="text"><p>60 Гц, 75 Гц, 100 Гц, 120 Гц, от 144 Гц</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block3_description">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_image_1"></div>
+                        <div class="card_title">Acer QG221Qbii</div>
+                        <div class="card_subtitle">
+                            <ul>
+                                <li>21.5", 16:9,</li>
+                                <li>1920x1080, VA, 75 Гц</li>
+                                <li>AMD FreeSync,</li>
+                                <li>Интерфейсы HDMI+D-</li>
+                                <li>Sub (VGA)</li>
+                            </ul>
+                        </div>
+                        <div class="card_cost">536 BYN</div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image_2"></div>
+                        <div class="card_title">AOC 24G2U5/BK</div>
+                        <div class="card_subtitle">
+                            <ul>
+                                <li>23.8", 16:9, 1920x1080, IPS</li>
+                                <li>75 Гц, AMD FreeSync,</li>
+                                <li>Динамики, HDMI+D-Sub</li>
+                                <li>(VGA)+DisplayPort,</li>
+                                <li>регулировка высоты,</li>
+                                <li>портретный режим</li>
+                            </ul>
+                        </div>
+                        <div class="card_cost">594 BYN</div>
+                    </div>
+                    <div class="card">
+                        <div class="card_image_3"></div>
+                        <div class="card_title">BenQ Mobiuz EX2510S</div>
+                        <div class="card_subtitle">
+                            <ul>
+                                <li>24.5", 16:9, 1920x1080, IPS</li>
+                                <li>165 Гц, AMD FreeSync Premium,</li>
+                                <li>Динамики, интерфейсы</li>
+                                <li>HDMI+DisplayPort,</li>
+                                <li>регулировка высоты</li>
+                            </ul>
+                        </div>
+                        <div class="card_cost">960 BYN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="#" class="mail"></a>
+            <a href="#" class="vk"></a>
+            <a href="#" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+    <script src="script/block2.js"></script>
+</body>
+</html>
